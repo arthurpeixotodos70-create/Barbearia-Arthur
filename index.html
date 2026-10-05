@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Barbearia Arthur</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <nav class="menu">
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+
+    <!-- INÍCIO -->
+    <section class="hero" id="inicio">
+
+        <h1>Barbearia Arthur</h1>
+
+        <p class="subtitulo">
+            Estilo, precisão e qualidade em cada corte.
+        </p>
+
+        <img
+            src="imagens/barbearia.jpg.jpg"
+            alt="Barbearia Arthur"
+            class="foto-barbearia"
+        >
+
+        <p>
+            Cortes masculinos, degradê e acabamento.
+        </p>
+
+        <a href="#servicos">
+            <button>Ver Serviços</button>
+        </a>
+
+    </section>
+
+
+    <!-- SERVIÇOS -->
+    <section id="servicos">
+
+        <h2>Nossos Serviços</h2>
+
+        <div class="servicos">
+
+            <div class="servico" data-servico="Corte">
+                <h3>Corte</h3>
+                <p>R$ 30,00</p>
+            </div>
+
+            <div class="servico" data-servico="Barba">
+                <h3>Barba</h3>
+                <p>R$ 20,00</p>
+            </div>
+
+            <div class="servico" data-servico="Corte + Barba">
+                <h3>Corte + Barba</h3>
+                <p>R$ 45,00</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- AGENDAMENTO -->
+    <div class="agendamento">
+
+        <h2>Escolha seu horário</h2>
+
+        <label for="nome">Nome:</label>
+
+        <input
+            type="text"
+            id="nome"
+            placeholder="Digite seu nome"
+        >
+
+        <br>
+
+        <label for="data">Data:</label>
+
+        <input
+            type="date"
+            id="data"
+        >
+
+        <br>
+
+      <p class="titulo-horario">Horário:</p>
+
+<div class="horarios">
+
+    <button type="button" class="horario" data-horario="09:00">09:00</button>
+    <button type="button" class="horario" data-horario="10:00">10:00</button>
+    <button type="button" class="horario" data-horario="11:00">11:00</button>
+
+    <button type="button" class="horario" data-horario="14:00">14:00</button>
+    <button type="button" class="horario" data-horario="15:00">15:00</button>
+    <button type="button" class="horario" data-horario="16:00">16:00</button>
+    <button type="button" class="horario" data-horario="17:00">17:00</button>
+    <button type="button" class="horario" data-horario="18:00">18:00</button>
+
+</div>
+
+        <br><br>
+
+        <a id="whatsapp" href="#">
+            <button>Agendar Horário</button>
+        </a>
+
+    </div>
+
+
+    <!-- SOBRE -->
+    <section id="sobre">
+
+        <h2>Sobre a Barbearia</h2>
+
+        <p class="sobre">
+            Na Barbearia Arthur, nosso objetivo é oferecer cortes modernos,
+            degradês e um atendimento de qualidade.
+        </p>
+
+    </section>
+
+
+    <!-- CONTATO -->
+    <section id="contato">
+
+        <h2>Contato</h2>
+
+        <p>
+            Agende seu horário pelo WhatsApp.
+        </p>
+
+    </section>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

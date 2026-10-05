@@ -1,0 +1,281 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+
+/* MENU */
+
+.menu {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background-color: #111;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+
+    border-bottom: 1px solid #333;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    opacity: 0.6;
+}
+
+
+/* INÍCIO */
+
+.hero {
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    font-size: 20px;
+    color: #bbb;
+    margin-bottom: 30px;
+}
+
+.foto-barbearia {
+    display: block;
+
+    width: 700px;
+    max-width: 90%;
+    height: 350px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    margin: 0 auto 25px;
+}
+
+
+/* BOTÕES */
+
+button {
+    background-color: white;
+    color: black;
+
+    padding: 15px 30px;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+
+/* TÍTULOS */
+
+h2 {
+    margin-top: 70px;
+}
+
+
+/* SERVIÇOS */
+
+.servicos {
+    display: flex;
+    justify-content: center;
+
+    gap: 25px;
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+}
+
+.servico {
+    background-color: #222;
+
+    padding: 30px;
+
+    width: 220px;
+
+    border: 2px solid transparent;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.servico:hover {
+    transform: translateY(-10px);
+}
+
+.servico.selecionado {
+    transform: translateY(-10px);
+    border-color: white;
+}
+
+
+/* AGENDAMENTO */
+
+.agendamento {
+    max-width: 600px;
+
+    margin: 50px auto 30px;
+
+    background-color: #222;
+
+    padding: 30px;
+
+    border-radius: 15px;
+}
+
+.agendamento h2 {
+    margin-top: 0;
+}
+
+.agendamento label,
+.titulo-horario {
+    font-weight: bold;
+}
+
+.agendamento input {
+    padding: 12px;
+
+    margin: 10px;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+
+/* HORÁRIOS */
+
+.horarios {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin: 15px 0 30px;
+}
+
+.horario {
+    background-color: #333;
+    color: white;
+
+    padding: 12px 18px;
+
+    border: 2px solid transparent;
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.horario:hover {
+    background-color: #444;
+}
+
+.horario.selecionado {
+    background-color: white;
+    color: black;
+    border-color: white;
+
+    transform: scale(1.05);
+}
+
+
+/* SOBRE */
+
+.sobre {
+    max-width: 600px;
+
+    margin: 0 auto 40px;
+
+    line-height: 1.6;
+}
+
+
+/* CONTATO */
+
+#contato {
+    padding-bottom: 60px;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .menu {
+        gap: 15px;
+        padding: 15px 5px;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .foto-barbearia {
+        width: 90%;
+        height: 220px;
+    }
+
+    .servicos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servico {
+        width: 80%;
+    }
+
+    .agendamento {
+        width: 80%;
+    }
+
+    .agendamento input {
+        max-width: 80%;
+    }
+
+    .horario {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+}
